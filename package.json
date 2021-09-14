@@ -7,10 +7,15 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@popperjs/core": "^2.10.1",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9",
     "bootstrap": "^5.1.1",
     "core-js": "^3.6.5",
     "firebase": "^9.0.1",
     "jquery": "^3.6.0",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0"
   },
@@ -18,7 +23,7 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "postcss": "^7.0.36",
+    "vue-cli-plugin-tailwind": "~2.0.6",
     "vue-template-compiler": "^2.6.11"
   }
 }
