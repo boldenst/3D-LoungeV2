@@ -6,6 +6,7 @@ global.jQuery = jQuery
 global.$ = jQuery
 let Bootstrap = require('bootstrap')
 import 'bootstrap/dist/css/bootstrap.css'
+import './assets/tailwind.css'
 
 Vue.config.productionTip = false
 
