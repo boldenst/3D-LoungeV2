@@ -1,38 +1,33 @@
 <template>
 <div class="intro-wrapper">
-    <div class="intro-title-container flex flex-row justify-center pt-4">
+    <div class="intro-title-container flex flex-row justify-left pt-4">
         <img class="intro-title__icon h-8 mt-1 ml-1" src="https://image.flaticon.com/icons/png/512/786/786251.png" alt="icon">
         <div>
             <h1 class="intro-issue-title text-2xl">Layer Adhesion Issue</h1>
             <ul class="flex flex-row ml-3">
-                <li>Tags:</li>
-                <li><a href="">Mofo</a></li>
-                <li><a href="">Moms spaghetti</a></li>
+                <li class="font-bold mr-2">Tags:</li>
+                <li><a href="">Mofo,</a></li>
+                <li><a href="">Moms spaghetti,</a></li>
                 <li><a href="">sticking</a></li>
             </ul>
         </div>
     </div>
-    <p class="pt-8 pb-8">
+    <p class="pt-8 pb-8 text-left">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
     <div class="gallery">
         <div class="gallery-img-1">
-            <img class="" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery1">
         </div>
         <div class="gallery-img-2">
-            <img class="" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery2">
         </div>
         <div class="gallery-img-3">
-            <img class="" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery3">
         </div>
         <div class="gallery-img-4">
-            <img class="" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery4">
         </div>
         <div class="gallery-img-5">
-            <img class="" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery5">
         </div>
     </div>
-    <div class="spacer mt-3"></div>
+    <div class="spacer mt-12"></div>
 </div>
 </template>
 
@@ -49,32 +44,19 @@
         margin: 0 auto;
     }
 
-    /* DESKTOP VERSION */
+    .intro-issue-title {
+        color: var(--blue-text-color);
+        font-weight: 600;
+    }
+
 
     /* SECTION */
-    .content {
-        margin-left: 279px;
-        margin-right: 279px;
-    }
-    .content > * {
-        margin-left: 137px;
-        margin-right: 137px;
-    }
+
 
     /* TITLE AND HEADER */
-    .header1 {
-        grid-template-columns: 1fr 2fr 2fr 2fr;
-        grid-template-rows: repeat(2, 1fr);
-    }
-    .header1 h1 {
-        font-size: 34px;
-    }
-    .header1 li {
-        font-size: 20px;
-    }
-    .icon {
-        width: 32px;
-    }
+
+
+
 
 
     /* TEXT AND SPACER */
@@ -86,32 +68,89 @@
     /* GALLERY */
     .gallery {
         display: grid;
+        height: 20rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-column-gap: 1rem;
-        grid-row-gap: 1rem;
+        grid-template-rows: 12rem 6rem;
+        gap: 0.5rem;
         margin: 0px 0.5rem 0px 0.5rem;
         grid-template-areas: 
         "main main main main"
         "second second third third";
     }
     .gallery-img-1 { 
-        grid-area: main; 
+        grid-area: main;
+        background-image: url(../../../assets/issue1-1.png); 
+        background-size: 110%;
+        background-position: center;
+        height: 100%;
     }
     .gallery-img-2 { 
         grid-area: second; 
+        background-image: url(../../../assets/issue1-2.png); 
+        background-size: 110%;
+        height: 100%;
     }
     .gallery-img-3 { 
         grid-area: third; 
+        background-image: url(../../../assets/issue1-3.png); 
+        background-size: cover;
+        height: 100%;
+
     }
     .gallery-img-4 { 
         grid-area: none; 
         display: none;
+        background-image: url(../../../assets/issue1-4.png); 
+        background-size: cover;
+        height: 100%;
     }
     .gallery-img-5 {
         grid-area: none; 
         display: none;
+        background-image: url(../../../assets/issue1-5.png); 
+        background-size: cover;
+        height: 100%;
     }
+
+    @media only screen and (min-width: 1000px) {
+      .intro-wrapper {
+        background-color: #E2E2E2;   
+    }
+
+    .spacer {
+        background-color: #9b9b9b;
+        height: 0.1rem;
+        width: 60%;
+        margin: 5rem auto 2rem auto;
+    }
+
+
+
+    /* TEXT AND SPACER */
+    p {
+        width: 70%;
+    }
+
+
+    /* GALLERY */
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin: 0;
+        grid-template-areas: 
+        "main main second third"
+        "main main fourth fifth";
+    }
+        .gallery-img-4 { 
+        grid-area: fourth; 
+        display: block;
+    }
+    .gallery-img-5 {
+        grid-area: fifth; 
+        display: block;
+    }
+}
 
   
 
