@@ -56,7 +56,11 @@
             </div>
         </nav>
     </div>
+            <div class="breadcrumb">
+        <a href="">Troubleshooting ></a><p>Layer adhesion issues</p>
     </div>
+    </div>
+
 </template>
 
 <style scoped>
@@ -67,8 +71,9 @@
         width: 100vw;
         height: 5rem;
         background-color: var(--primary-color);
-        position: absolute;
+        position: fixed;
         top: 0;
+        left: 0;
         display: flex;
         justify-content: space-between;
     }
@@ -183,6 +188,15 @@
 
     .header-desk-wrapper {
         display: none;
+    }
+
+    .breadcrumb {
+        position: fixed;
+        display: flex;
+        top: 5rem;
+        background-color: var(--blue-color);
+        height: 2rem;
+        width: 100%;
     }
 
 }

@@ -16,23 +16,23 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
     <div class="gallery">
-        <div class="m-3">
-            <img class="gallery-img-1" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery1">
+        <div class="gallery-img-1">
+            <img class="" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery1">
         </div>
-        <div class="m-3">
-            <img class="gallery-img-2" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery2">
+        <div class="gallery-img-2">
+            <img class="" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery2">
         </div>
-        <div class="m-3">
-            <img class="gallery-img-3" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery3">
+        <div class="gallery-img-3">
+            <img class="" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery3">
         </div>
-        <div class="m-3">
-            <img class="gallery-img-4" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery4">
+        <div class="gallery-img-4">
+            <img class="" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery4">
         </div>
-        <div class="m-3">
-            <img class="gallery-img-5" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery5">
+        <div class="gallery-img-5">
+            <img class="" src="https://images.unsplash.com/photo-1509243271451-2b84555736ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="gallery5">
         </div>
     </div>
-    <div class="spacer w-5 h-1 mt-4 mb-4"></div>
+    <div class="spacer mt-3"></div>
 </div>
 </template>
 
@@ -44,10 +44,12 @@
 
     .spacer {
         background-color: var(--third-color);
+        height: 0.1rem;
+        width: 80%;
+        margin: 0 auto;
     }
 
     /* DESKTOP VERSION */
-    @media only screen and (min-width: 1200px) {
 
     /* SECTION */
     .content {
@@ -77,42 +79,40 @@
 
     /* TEXT AND SPACER */
     p {
-        margin-top: 74px;
-        margin-right: 207px !important;
-        margin-bottom: 58px;
-        font-size: 20px;
+        width: 100%;
     }
-    .spacer {
-        height: 111px;
-        width: 536px;
-        border-bottom: #A3A3A3 solid 3px; 
-        margin: auto;
-    }
+
 
     /* GALLERY */
     .gallery {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-column-gap: 16px;
-        grid-row-gap: 16px;
-        margin: 0px 137px 0px 137px;
+        grid-template-rows: auto;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        margin: 0px 0.5rem 0px 0.5rem;
+        grid-template-areas: 
+        "main main main main"
+        "second second third third";
     }
     .gallery-img-1 { 
-        grid-area: 1 / 1 / span 2 / span 2; 
+        grid-area: main; 
     }
     .gallery-img-2 { 
-        grid-area: 1 / 3 / 2 / 3; 
+        grid-area: second; 
     }
     .gallery-img-3 { 
-        grid-area: 2 / 3 / 2 / 3; 
+        grid-area: third; 
     }
     .gallery-img-4 { 
-        grid-area: 1 / 4 / 1 / 4; 
+        grid-area: none; 
+        display: none;
     }
     .gallery-img-5 {
-        grid-area: 2 / 4 / 2 / 4; 
+        grid-area: none; 
+        display: none;
     }
 
-    }/* Style end tag */
+  
 
 </style>
