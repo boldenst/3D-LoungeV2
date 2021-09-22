@@ -26,6 +26,7 @@
     --primary-color: #f6f6f6;
     --secondary-color: #e2e2e2; 
     --third-color: #0d0d0d;
+    --fourth-color: #CFCFCF;
 }
 
 #app {
