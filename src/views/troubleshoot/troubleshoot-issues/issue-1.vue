@@ -11,7 +11,13 @@
 
 
 
-<style>
+<style scoped>
+  #issue1 {
+    margin: 0.5rem 1.5rem;
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+    padding: 0.4rem;
+  }
 
 
 </style>
