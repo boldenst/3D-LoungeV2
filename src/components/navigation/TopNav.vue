@@ -56,8 +56,15 @@
                 </ul>
             </div>
         </nav>
+        
     </div>
+    <div class="breadcrumb">
+        <a href="">Troubleshooting ></a><p>Layer adhesion issues</p>
     </div>
+            
+    </div>
+    
+
 </template>
 
 <style scoped>
@@ -68,8 +75,9 @@
         width: 100vw;
         height: 5rem;
         background-color: var(--primary-color);
-        position: absolute;
+        position: fixed;
         top: 0;
+        left: 0;
         display: flex;
         justify-content: space-between;
     }
@@ -186,9 +194,21 @@
         display: none;
     }
 
+    .breadcrumb {
+        position: fixed;
+        display: flex;
+        top: 5rem;
+        background-color: var(--blue-color);
+        height: 2rem;
+        width: 100%;
+        color: var(--secondary-color);
+        padding-top: 0.3rem;
+        padding-left: 1.5rem;
+    }
+
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 1000px) {
 
     .burgermenu-wrapper {
         display: none;
@@ -196,7 +216,7 @@
 
     .header-desk-wrapper {
         display: flex;
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 100vw;
         height: 5rem;
@@ -208,13 +228,13 @@
         width: 3rem;
         height: 3rem;
         background-color: var(--blue-color);
-        margin: 1rem;
+        margin: 1rem 1rem 1rem 13vw;
     }
 
     .header-desk-nav {
         display: flex;
         flex-direction: row;
-        margin-right: 1rem;
+        margin-right: 13vw;
         align-items: center;
     }
 
@@ -245,6 +265,20 @@
     margin-right: 0.5rem;
 
 }
+
+
+    .breadcrumb {
+        position: fixed;
+        display: flex;
+        top: 5rem;
+        background-color: var(--blue-color);
+        height: 2rem;
+        padding-left: 13vw;
+        padding-top: 0.3rem;
+        width: 100%;
+        color: var(--secondary-color);
+    }
+
 
 }
 </style>
