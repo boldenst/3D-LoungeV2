@@ -22,7 +22,7 @@
             <div class="header-nav__signin">
                 <ul>
                    <li>
-                       <router-link to="../Login">Login</router-link>
+                       <router-link to="/SignIn">Login</router-link>
                     </li>
 
                     <li>
@@ -45,12 +45,12 @@
             <div class="header-desk-nav__signin">
                 <ul>
                     <li>
-                        <a href="">
+                        <router-link to="/SignIn">
                             <div class="header-desk-nav__signin-icon-border">
                                 <div class="header-desk-nav__signin-icon"></div>
                             </div>
                             Sign in
-                        </a>
+                        </router-link>
                         </li>
                     <li><a href="">Sign up</a></li>
                 </ul>
