@@ -21,9 +21,10 @@
             </ul>
             <div class="header-nav__signin">
                 <ul>
-                    <li>
-                        <a href="">Sign in</a>
+                   <li>
+                       <router-link to="../Login">Login</router-link>
                     </li>
+
                     <li>
                         <a href="">Sign up</a>
                     </li>
