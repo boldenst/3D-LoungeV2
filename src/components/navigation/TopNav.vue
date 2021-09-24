@@ -38,7 +38,7 @@
         </a>
         <nav class="header-desk-nav">
             <ul>
-                <li><router-link to="/troubleshoot/issue-1">Issue1</router-link></li>
+                <li><router-link to="/troubleshoot">Troubleshoot</router-link></li>
                 <li><a href="">Forum</a></li>
                 <li><a href="">Gallery</a></li>
             </ul>
