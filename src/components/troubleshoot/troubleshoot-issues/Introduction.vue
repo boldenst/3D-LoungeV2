@@ -68,7 +68,7 @@
     /* GALLERY */
     .gallery {
         display: grid;
-        height: 20rem;
+        height: 22rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 12rem 6rem;
         gap: 0.5rem;
@@ -79,15 +79,15 @@
     }
     .gallery-img-1 { 
         grid-area: main;
-        background-image: url(../../../assets/issue1-1.png); 
-        background-size: 110%;
-        background-position: center;
+        background-image: url(../../../assets/img-2.jpg); 
+        background-size: cover;
+        background-position: 30% 30%;
         height: 100%;
     }
     .gallery-img-2 { 
         grid-area: second; 
         background-image: url(../../../assets/issue1-2.png); 
-        background-size: 110%;
+        background-size: cover;
         height: 100%;
     }
     .gallery-img-3 { 
