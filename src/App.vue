@@ -12,7 +12,6 @@
 </template>
 
 <style>
-
 * {
     margin: 0;
     padding: 0;
@@ -49,14 +48,12 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
-
 </style>
 
 <script>
 // @ is an alias to /src
 import BottomNav from '@/components/navigation/BottomNav.vue'
 import TopNav from '@/components/navigation/TopNav.vue'
-
 
 export default {
   name: 'App',
@@ -65,8 +62,6 @@ export default {
     TopNav
   }
 }
-
-
 </script>
 
 
