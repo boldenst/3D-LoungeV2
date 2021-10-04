@@ -9,14 +9,17 @@
                 </div>
                 <h2>What is it?</h2>
             </div>
-            <p class="main-text explanation-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui, omnis odio eum laborum quo minima
-                totam culpa amet cum sint consequuntur repellendus modi sed? 
-                <br> <br>
-                Dolore recusandae incidunt pariatur nisi
-                perferendis dicta corporis optio facilis at laudantium? Asperiores fugit blanditiis doloremque suscipit,
-                hic qui libero, et provident veniam dicta dolor.
-            </p>
+            <slot name="explanation-first">
+                <p class="main-text explanation-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui, omnis odio eum laborum quo minima
+                    totam culpa amet cum sint consequuntur repellendus modi sed? 
+                    <br> <br>
+                    Dolore recusandae incidunt pariatur nisi
+                    perferendis dicta corporis optio facilis at laudantium? Asperiores fugit blanditiis doloremque suscipit,
+                    hic qui libero, et provident veniam dicta dolor.
+                </p>
+            </slot>
+
         </div>
         <div class="explanations__problem-container">
             <div class="explanations__caption-layout">
@@ -25,16 +28,18 @@
                         ?
                     </p>
                 </div>
-                <h2>How to spot layer adhesion issues?</h2>
+                <h2>How to spot the issue?</h2>
             </div>
-            <p class="explanation-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui, omnis odio eum laborum quo minima
-                totam culpa amet cum sint consequuntur repellendus modi sed? 
-                <br> <br>
-                Dolore recusandae incidunt pariatur nisi
-                perferendis dicta corporis optio facilis at laudantium? Asperiores fugit blanditiis doloremque suscipit,
-                hic qui libero, et provident veniam dicta dolor.
-            </p>
+            <slot name="explanation-second">
+                <p class="main-text explanation-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui, omnis odio eum laborum quo minima
+                    totam culpa amet cum sint consequuntur repellendus modi sed? 
+                    <br> <br>
+                    Dolore recusandae incidunt pariatur nisi
+                    perferendis dicta corporis optio facilis at laudantium? Asperiores fugit blanditiis doloremque suscipit,
+                    hic qui libero, et provident veniam dicta dolor.
+                </p>
+            </slot>
         </div>
     </div>
 </template>

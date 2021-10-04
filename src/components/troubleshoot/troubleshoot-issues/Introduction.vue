@@ -3,29 +3,37 @@
     <div class="intro-title-container flex flex-row justify-left pt-4">
         <img class="intro-title__icon h-8 mt-1 ml-1" src="https://image.flaticon.com/icons/png/512/786/786251.png" alt="icon">
         <div>
-            <h1 class="intro-issue-title text-2xl">Layer Adhesion Issue</h1>
+            <slot name="title">
+                <h1 class="intro-issue-title text-2xl">SLOT HEADING ISSUE</h1>
+            </slot>
             <ul class="flex flex-row ml-3">
                 <li class="font-bold mr-2">Tags:</li>
-                <li><a href="">Mofo,</a></li>
-                <li><a href="">Moms spaghetti,</a></li>
-                <li><a href="">sticking</a></li>
+                <slot name="tags">
+                    <li><a href="">tag1,</a></li>
+                    <li><a href="">tag2,</a></li>
+                    <li><a href="">tag3</a></li>
+                </slot>
             </ul>
         </div>
     </div>
-    <p class="pt-8 pb-8 text-left">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    <slot name="intro">
+        <p class="pt-8 pb-8 text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </slot>    
     <div class="gallery">
-        <div class="gallery-img-1">
-        </div>
-        <div class="gallery-img-2">
-        </div>
-        <div class="gallery-img-3">
-        </div>
-        <div class="gallery-img-4">
-        </div>
-        <div class="gallery-img-5">
-        </div>
+        <slot name="gallery">
+            <div class="gallery-img-1">
+            </div>
+            <div class="gallery-img-2">
+            </div>
+            <div class="gallery-img-3">
+            </div>
+            <div class="gallery-img-4">
+            </div>
+            <div class="gallery-img-5">
+            </div>
+        </slot>    
     </div>
     <div class="spacer mt-12"></div>
 </div>
