@@ -11,7 +11,22 @@
 
 
 
-<style>
+<style scoped>
+  #issue1 {
+    margin: 0.5rem 1.5rem;
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+    padding: 0.4rem;
+  }
+
+  @media only screen and (min-width: 1000px) {
+  #issue1 {
+    margin: 0.5rem 13vw;
+    padding: 2rem 8rem;
+  }
+}
+
+
 
 
 </style>
