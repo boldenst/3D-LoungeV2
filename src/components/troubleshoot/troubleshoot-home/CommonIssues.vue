@@ -9,7 +9,7 @@
           </div>
             <div class="w-80 h-80 px-8 flex-shrink-0 gallery-item " data-slider-target="image" id="2">
             <img class="rounded-t-md" src="https://www.simplify3d.com/wp-content/uploads/2019/04/holes-or-gaps-in-top-layers-1024x1024-1-1024x1024.jpg" />
-            <router-link to="/troubleshoot/issue-1" class="container rounded-b-md">Open issue</router-link>
+            <router-link to="/troubleshoot/issue-2" class="container rounded-b-md">Open issue</router-link>
           </div>
             <div class="w-80 h-80 px-8 flex-shrink-0 gallery-item " data-slider-target="image" id="3">
             <img class="rounded-t-md" src="https://www.simplify3d.com/wp-content/uploads/2019/04/holes-or-gaps-in-top-layers-1024x1024-1-1024x1024.jpg" />

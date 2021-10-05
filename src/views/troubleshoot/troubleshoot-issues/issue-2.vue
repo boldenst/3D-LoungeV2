@@ -1,10 +1,9 @@
 <template>
   <div id="issue1">
-    
-    <Introduction> 
-    <template v-slot:title>HEADING FOR ISSUE</template>
-    </Introduction>
+    <Breadcrumb></Breadcrumb>
+    <Introduction></Introduction>
     <Causes></Causes>
+    <Explanations></Explanations>
     <Explanations></Explanations>
     <Comments></Comments>
 
@@ -15,10 +14,7 @@
 
 <style scoped>
   #issue1 {
-    margin: 0.5rem 1.5rem;
-    background-color: var(--secondary-color);
-    overflow-x: hidden;
-    padding: 0.4rem;
+
   }
 
   @media only screen and (min-width: 1000px) {

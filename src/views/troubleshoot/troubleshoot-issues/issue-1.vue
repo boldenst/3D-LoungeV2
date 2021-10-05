@@ -2,9 +2,9 @@
   <div id="issue1">
 
     <Introduction>
-      <template v-slot:title>
+      <template>
 <!-- ISSUE HEADING -->
-        <h1 class="intro-issue-title text-2xl">SLOT HEADING ISSUE</h1>
+        SLOT HEADING ISSasdsdaUE
       </template>
       <template v-slot:tags>
 <!-- ISSUE TAGS -->
