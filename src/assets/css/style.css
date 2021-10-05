@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    font-family: montserrat;
     
 }
 
@@ -62,8 +63,11 @@
 }
 
 
+/* ISSUE INTRO */
+
 .issue-intro {
   margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 .issue-heading {
@@ -85,7 +89,7 @@
 
 .issue-content__desc {
   width: 45vw;
-  height: 20rem;
+  height: 25rem;
   margin-right: 4rem;
   display: flex;
   flex-direction: column;
@@ -94,9 +98,8 @@
 .issue-content__gallery {
   display: grid;
   width: 100%;
-  height: 20rem;
+  height: 25rem;
   gap: 0.5rem;
-  background-color: #2c3e50;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-template-areas: 
@@ -106,7 +109,6 @@
 
 .issue-content-gallery__image-main {
   grid-area: main;
-  background-color: #42b983;
 }
 
 .issue-content-gallery__image-second {
@@ -118,7 +120,6 @@
 .issue-content-gallery__image-third {
   grid-area: third;
   background-color: #42b983;
-
 }
 
 .issue-content-desc__tags {
@@ -148,7 +149,64 @@
 justify-content: space-between;
 }
 
-.issue-content-desc_icons {
+.issue-content-desc__icons {
   display: flex;
   justify-content: flex-end;
+}
+
+.issue-content-desc-icons__icon {
+  margin: 0 0.5rem;
+  width: 2rem;
+}
+
+.issue-content-desc-icons__icon img {
+  width: 100%;
+}
+
+/* CAUSES AND SOLUTIONS */
+
+.cause-solutions {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.causes-container, .solutions-container {
+  width: 49.5%;
+}
+
+.causes-container__heading-flex, .solutions-container__heading-flex {
+  display: flex;
+  background-color: var(--color-light-black);
+  color: var(--color-white);
+  border-radius: 7px 7px 0 0;
+  padding: 0.2rem;
+  width: 100%;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.causes {
+  display: flex;
+  text-align: left;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 1.1rem 0;
+  font-weight: 600;
+  border-bottom: 3px solid var(--color-red);
+  align-items: center;
+}
+
+.solutions {
+  display: flex;
+  text-align: left;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 1.1rem 0;
+  font-weight: 600;
+  border-bottom: 3px solid var(--color-green);
+  justify-content: space-between;
+  align-items: center;
 }
