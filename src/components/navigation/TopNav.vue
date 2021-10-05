@@ -38,7 +38,7 @@
         </a>
         <nav class="header-desk-nav">
             <ul>
-                <li><router-link to="/troubleshoot/issue-1">Issue1</router-link></li>
+                <li><router-link to="/troubleshoot">Troubleshoot</router-link></li>
                 <li><a href="">Forum</a></li>
                 <li><a href="">Gallery</a></li>
             </ul>
@@ -220,14 +220,14 @@
         top: 0;
         width: 100vw;
         height: 5rem;
-        background-color: var(--primary-color);
+        background-color: var(--color-light-black);
         justify-content: space-between;
     }
 
     .header-desk__temp-logo {
         width: 3rem;
         height: 3rem;
-        background-color: var(--blue-color);
+        background-color: var(--color-brand);
         margin: 1rem 1rem 1rem 13vw;
     }
 
@@ -250,7 +250,7 @@
 
         .header-desk-nav ul li a {
         text-decoration: none;
-        color: var(--third-color);
+        color: var(--color-white);
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -261,7 +261,7 @@
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
-    border: solid 0.2rem var(--blue-color);
+    border: solid 0.2rem var(--color-brand);
     margin-right: 0.5rem;
 
 }
@@ -271,12 +271,12 @@
         position: fixed;
         display: flex;
         top: 5rem;
-        background-color: var(--blue-color);
+        background-color: var(--color-brand);
         height: 2rem;
         padding-left: 13vw;
         padding-top: 0.3rem;
         width: 100%;
-        color: var(--secondary-color);
+        color: var(--color-white);
     }
 
 

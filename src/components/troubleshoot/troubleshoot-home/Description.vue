@@ -12,4 +12,8 @@
     h1{
         color:#50b596;
     }
+
+    section {
+        padding-top: 7rem;
+    }
 </style>
