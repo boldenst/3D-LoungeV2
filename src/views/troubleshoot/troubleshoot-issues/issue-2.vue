@@ -19,8 +19,8 @@
 
   @media only screen and (min-width: 1000px) {
   #issue1 {
-    margin: 0.5rem 13vw;
-    padding: 2rem 8rem;
+    margin: 0.5rem 14vw;
+    padding: 2rem 0rem;
   }
 }
 
