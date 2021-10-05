@@ -9,12 +9,14 @@
 :root {
     --color-white: #FFFFFF;
     --color-light: #F6F6F6;
+    --color-light-gray: #C7C7C7;
     --color-gray: #686868;
     --color-dark-gray: #4D4D4D;
     --color-light-black: #313131;
     --color-black: #000000;
     --color-light-brand: #CDF3E8;
     --color-brand: #4ED5AC;
+    --color-dark-brand: #3CA887;
     --color-foot: #25686D;
     --color-green: #1DC622;
     --color-light-green: #4ED54E;
