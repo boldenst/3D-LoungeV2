@@ -26,7 +26,7 @@
                     </li>
 
                     <li>
-                        <a href="">Sign up</a>
+                        <router-link to="/SignUp">Sign Up</router-link>
                     </li>
                 </ul>
             </div>
@@ -52,7 +52,7 @@
                             Sign in
                         </router-link>
                         </li>
-                    <li><a href="">Sign up</a></li>
+                    <li> <router-link to="/SignUp">Sign up</router-link></li>
                 </ul>
             </div>
         </nav>
