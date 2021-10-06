@@ -28,6 +28,17 @@
         <p class="btn__num-txt">1</p>
     </button>
 
+    <button class="btn__rating">
+        <img class="btn__rating-icon" src="@/assets/icons/Star.svg" alt="">
+        <img class="btn__rating-icon-filled" src="@/assets/icons/Star-filled.svg" alt="">
+        <p class="btn__rating-txt">420</p>
+    </button>
+
+    <button class="btn__learn-how">
+        <p class="btn__learn-how-txt">Learn how</p>
+        <img class="btn__learn-how-icon" src="@/assets/icons/forward-arrow-green.svg" alt="">
+    </button>
+
     </div>
 </template>
 
@@ -84,8 +95,8 @@
     height: 5rem;
     background-color: var(--color-brand);
     height: 3rem;
-    width: 10rem;
-    padding: 0rem 2rem;
+    width: 8rem;
+    padding: 0rem 1rem;
     border-radius: .5rem;
     color: var(--color-white);
     font-size: 1.2rem;
@@ -164,6 +175,65 @@
 
 .btn__num-one:hover {
     background-color: var(--color-gray);
+    color: var(--color-white);
 }
 
+.btn__num-one:focus {
+    background-color: var(--color-brand);
+    color: var(--color-white);
+}
+
+.btn__rating {
+    width: 8rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid .15rem var(--color-orange);
+    border-radius: .5rem;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    color: var(--color-black);
+}
+
+.btn__rating-icon {
+    transition: transform .3s ease-in-out;
+
+}
+
+.btn__rating:hover .btn__rating-icon {
+    transform: rotate(90deg);
+}
+
+.btn__rating-icon-filled {
+    display: none;
+}
+
+.btn__rating:focus .btn__rating-icon{
+    display: none;
+}
+
+.btn__rating:focus .btn__rating-icon-filled{
+    display: flex;
+    transform: rotate(90deg);
+}
+
+.btn__learn-how {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--color-light);
+    border: solid .15rem var(--color-green);
+    border-radius: .5rem;    
+}
+
+.btn__learn-how-txt {
+    padding-left: 1rem;
+}
+
+.btn__learn-how-icon {
+    height: 3rem;
+}
 </style>
