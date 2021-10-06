@@ -37,19 +37,48 @@
         </p>
       </template>
     </Causes>
-    <Explanations></Explanations>
-    <Explanations></Explanations>
+    <Explanations>
+      <template v-slot:explanation-heading>
+        <div class="explanations__question-icon">
+          <p class="explanations__question-icon">
+            ?
+          </p>
+        </div>
+        <h2 class="explanations__caption-layout-heading">What is it?</h2>
+      </template>
+      Slot 1 ipsum dolor sit amet consectetur adipisicing elit. Dolore qui, omnis odio eum laborum quo minima
+      totam culpa amet cum sint consequuntur repellendus modi sed?
+      <br> <br>
+      Dolore recusandae incidunt pariatur nisi
+      perferendis dicta corporis optio facilis at laudantium? Asperiores fugit blanditiis doloremque suscipit,
+      hic qui libero, et provident veniam dicta dolor.
+    </Explanations>
+    <Explanations>
+      <template v-slot:explanation-heading>
+        <div class="explanations__question-icon">
+          <p class="explanations__question-icon">
+            i
+          </p>
+        </div>
+        <h2 class="explanations__caption-layout-heading">How to spot the issue</h2>
+      </template>
+      Slot 2 ipsum dolor sit amet consectetur adipisicing elit. Dolore qui, omnis odio eum laborum quo minima
+      totam culpa amet cum sint consequuntur repellendus modi sed?
+      <br> <br>
+      Dolore recusandae incidunt pariatur nisi
+      perferendis dicta corporis optio facilis at laudantium? Asperiores fugit blanditiis doloremque suscipit,
+      hic qui libero, et provident veniam dicta dolor.
+    </Explanations>
     <Comments></Comments>
-
   </div>
 </template>
 
 
 
 <style scoped>
-* {
-  font-family: 'Montserrat', sans-serif;
-}
+  * {
+    font-family: 'Montserrat', sans-serif;
+  }
 
   #issue1 {
     margin: 5rem 14vw;
@@ -57,20 +86,24 @@
 
   .issue-content-gallery__image-main {
     background-image: url(../../../assets/issue1-1.png);
-    background-size: 120%;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
   }
+
 
   .issue-content-gallery__image-second {
     background-image: url(../../../assets/issue1-2.png);
-    background-size: 125%;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
   }
 
   .issue-content-gallery__image-third {
     background-image: url(../../../assets/issue1-3.png);
-    background-size: 115%;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
   }
 </style>
 
