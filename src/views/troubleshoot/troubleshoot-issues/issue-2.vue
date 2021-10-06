@@ -47,6 +47,10 @@
 
 
 <style scoped>
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
   #issue1 {
     margin: 5rem 14vw;
   }
