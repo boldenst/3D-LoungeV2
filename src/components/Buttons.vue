@@ -1,8 +1,8 @@
 <template>
     <div class="local-container">
-    <button class="btn__full-guide">
+    <a class="btn__full-guide">
         <p class="btn__full-guide-txt">Full Guide</p>
-    </button>
+    </a>
     
     <button class="btn__sugg-edit">
         <p class="btn__sugg-edit-txt">Suggest edit</p>
@@ -24,9 +24,9 @@
         <div class="btn__gray-line-ver"></div>
     </button>
 
-    <button class="btn__num-one">
+    <a class="btn__num-one" href="">
         <p class="btn__num-txt">1</p>
-    </button>
+    </a>
 
     <button class="btn__rating">
         <img class="btn__rating-icon" src="@/assets/icons/Star.svg" alt="">
@@ -34,10 +34,10 @@
         <p class="btn__rating-txt">420</p>
     </button>
 
-    <button class="btn__learn-how">
+    <a class="btn__learn-how" href="">
         <p class="btn__learn-how-txt">Learn how</p>
         <img class="btn__learn-how-icon" src="@/assets/icons/forward-arrow-green.svg" alt="">
-    </button>
+    </a>
 
     </div>
 </template>
@@ -52,6 +52,9 @@
 }
 
 .btn__full-guide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 5rem;
     background-color: var(--color-brand);
     height: 3rem;
@@ -119,7 +122,8 @@
 .btn__filter:hover {
     background-color: var(--color-white);
     color: var(--color-brand);
-    border:solid .15rem var(--color-brand);
+    outline:solid .15rem var(--color-brand);
+    outline-offset: -.15rem;
 }
 
 .btn__filter:hover .btn__filter-arrow{
@@ -134,6 +138,8 @@
     color: var(--color-white);
     font-size: 1.2rem;
     position: relative;
+    transition: all .3s ease-in-out;    
+
 }
 
 .btn__gray-line {
@@ -159,6 +165,7 @@
     height: 100%;
     width: .4rem;
     background-color: var(--color-gray);
+    
 }
 
 .btn__gray:focus .btn__gray-line, .btn__gray-ver:focus .btn__gray-line-ver {
@@ -167,10 +174,14 @@
 
 .btn__num-one {
     width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 3rem;
     background-color: var(--color-light-gray);
     border-radius: .5rem;
     font-size: 1.2rem;
+    transition: all .3s ease-in-out;    
 }
 
 .btn__num-one:hover {
@@ -224,9 +235,11 @@
     justify-content: space-between;
     width: 10rem;
     height: 3rem;
+    color: var(--color-black);
     background-color: var(--color-light);
     border: solid .15rem var(--color-green);
-    border-radius: .5rem;    
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;    
 }
 
 .btn__learn-how-txt {
@@ -236,4 +249,10 @@
 .btn__learn-how-icon {
     height: 3rem;
 }
+
+.btn__learn-how:hover {
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+
 </style>
