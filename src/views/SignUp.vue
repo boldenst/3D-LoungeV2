@@ -6,17 +6,9 @@
             Create your account
         </h2>
         </div>
-        <form class="mt-8 space-y-6" v-on:submit.prevent="createNewAccount">
+        <form class="mt-8 space-y-6" @submit.prevent="SignUp">
         <input type="hidden" name="remember" value="true">
         <div class="rounded-md space-y-5">
-            <div>
-                <label for="firstname" class="sr-only">First name</label>
-                <input v-model="firstName" id="firstname" name="firstname" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-main-green-500 focus:border-main-green-500 focus:z-10 sm:text-sm" placeholder="Your first name">
-            </div>
-            <div>
-                <label for="lastname" class="sr-only">Last name</label>
-                <input v-model="lastName" id="lastname" name="lastname" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-main-green-500 focus:border-main-green-500 focus:z-10 sm:text-sm" placeholder="Your last name">
-            </div>
             <div>
                 <label for="email-address" class="sr-only">Email address</label>
                 <input v-model="email" id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-main-green-500 focus:border-main-green-500 focus:z-10 sm:text-sm" placeholder="Email address">
@@ -32,7 +24,7 @@
         </div>
 
         <div>
-            <button type="submit" name="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-main-green-600 hover:bg-main-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-main-green-500">
+            <button type="submit" name="submit" value="SignUp" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-main-green-600 hover:bg-main-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-main-green-500">
             <span class="absolute left-0 inset-y-0 flex items-center pl-3">
                 <!-- Heroicon name: solid/lock-closed -->
                 <svg class="h-5 w-5 text-main-green-500 group-hover:text-main-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -41,6 +33,7 @@
             </span>
                 Sign up
             </button>
+            <p class="mt-2">Already have an account? <router-link to="/SignIn" > <span class="font-medium text-main-green-600 hover:text-main-green-500 underline"> Sign in</span></router-link></p>
         </div>
         </form>
     </div>
@@ -49,30 +42,26 @@
 
 <script>
 import firebase from 'firebase';
+import {ref} from 'vue';
 export default {
-    name: 'Register',
-    data() {
-        return {
-            firstName: "",
-            lastName: "",  
-            email: "",
-            password: "",
-            password_confirm: ""
+    setup() {
+        const email = ref("");
+        const password = ref("");
+
+        const SignUp = () => {
+            firebase
+                .auth()
+                .createUserWithEmailAndPassword(email.value, password.value)
+                .then(user => {
+                    alert(user);
+                })
+                .catch(err => alert(err.message));
         }
-    },
-    methods: {
-        createNewAccount() {
-            firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
-            .then((userCredential) => {
-                // Signed in 
-                var user = userCredential.user;
-                // ...
-            })
-            .catch((error) => {
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                // ..
-            });
+
+        return {
+            SignUp,
+            email,
+            password
         }
     }
 }
