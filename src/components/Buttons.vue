@@ -37,17 +37,33 @@
     <a class="btn__learn-how" href="">
         <p class="btn__learn-how-txt">Learn how</p>
         <img class="btn__learn-how-icon" src="@/assets/icons/forward-arrow-green.svg" alt="">
-    </a>
-
+    </a>    
+    <div class="logo-test">
+        <img src="@/assets/icons/logo.svg" alt="">
     </div>
+        <div class="logo-test-light">
+        <img src="@/assets/icons/logo-light.svg" alt="">
+    </div>
+    </div>
+
 </template>
 
 <style scoped>
 
+button {
+    margin: 2rem 0;
+}
+
+a {
+    margin: 2rem 0;
+}
+
 .local-container {
     margin-top: 10rem;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -254,5 +270,21 @@
     background-color: var(--color-green);
     color: var(--color-white);
 }
+
+.logo-test {
+    width: 20rem;
+    height: auto;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.logo-test-light {
+    width: 20rem;
+    height: auto;
+    padding: 1rem;
+    background-color: var(--color-light-black);
+    margin: 2rem 0;
+}
+
 
 </style>
