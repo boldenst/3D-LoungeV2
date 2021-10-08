@@ -1,5 +1,5 @@
 <template>
-    <section style="margin:2rem 14vw;">
+    <section>
     <h1 class="text-3xl text-gray-900 mb-3 text-left"> Welcome to 3D-Lounge</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut, 
         assumenda corporis exercitationem suscipit aperiam animi ex sequi 
@@ -9,11 +9,23 @@
 </template>
 
 <style scoped>
-    h1{
-        color:#50b596;
-    }
+
 
     section {
-        padding-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+        background-color: var(--color-light-brand);
+        margin: 5rem 14vw 5rem 14vw;
+        padding: 2rem;
+    }
+
+    h1{
+        color: var(--color-brand);
+        font-weight: bold;
+    }
+
+    p {
+        text-align: left;
     }
 </style>

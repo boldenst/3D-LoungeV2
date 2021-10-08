@@ -1,7 +1,6 @@
 <template>
   <div id="issue1">
     <Description> </Description>
-    <FilterSearch></FilterSearch>
     <Tabs>
       <Tab class="sub-grid issue-1__container grid-area-tab" name="Layer Adhesion" selected="true">
         <div class="issue__info-contains">
