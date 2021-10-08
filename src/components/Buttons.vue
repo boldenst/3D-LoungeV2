@@ -1,9 +1,9 @@
 <template>
     <div class="local-container">
         <div class="buttons-library">
-            <a class="btn__full-guide">
+            <button class="btn__full-guide">
                 <p class="btn__full-guide-txt">Full Guide</p>
-            </a>
+            </button>
 
             <button class="btn__sugg-edit">
                 <p class="btn__sugg-edit-txt">Suggest edit</p>
