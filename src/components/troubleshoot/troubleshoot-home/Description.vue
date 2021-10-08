@@ -1,5 +1,5 @@
 <template>
-    <section style="width: 65%; margin:auto;">
+    <section style="margin:2rem 14vw;">
     <h1 class="text-3xl text-gray-900 mb-3 text-left"> Welcome to 3D-Lounge</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut, 
         assumenda corporis exercitationem suscipit aperiam animi ex sequi 
