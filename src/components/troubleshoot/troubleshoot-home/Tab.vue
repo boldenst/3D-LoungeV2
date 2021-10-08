@@ -21,9 +21,5 @@
   }
 </script>
 
-<style scoped>
-
-</style>
-
 
 <!-- https://www.youtube.com/watch?v=LBwraONGb9E -->
