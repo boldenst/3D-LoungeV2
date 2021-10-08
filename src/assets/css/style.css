@@ -71,6 +71,7 @@
   "head head head head head head head head head head"
   "nav nav info info info info info info info info"
   ;
+  margin: 0 14vw;
 }
 
 .tabs-section__heading {
@@ -271,13 +272,20 @@
 
 .btn__full-guide:hover {
   background-color: var(--color-light-black);
+  color: var(--color-white);
 }
 
 
 .issue__image {
   grid-area: img;
   width: 100%;
-  background-color: red;
+  background-image: url(../Nozzles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.issue__image-1 {
+
 }
 
 /* ISSUE INTRO */

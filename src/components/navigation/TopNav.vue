@@ -217,13 +217,13 @@
 
         .header-desk__logo {
             height: 3.5rem;
-            margin-left: 13vw;
+            margin-left: 14vw;
         }
 
         .header-desk-nav {
             display: flex;
             flex-direction: row;
-            margin-right: 13vw;
+            margin-right: 14vw;
             align-items: center;
         }
 
