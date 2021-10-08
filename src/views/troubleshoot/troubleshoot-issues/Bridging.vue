@@ -85,7 +85,7 @@
   }
 
   .issue-content-gallery__image-main {
-    background-image: url(../../../assets/Nozzles.jpg);
+    background-image: url(../../../assets/issue1-1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
