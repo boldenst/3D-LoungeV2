@@ -13,11 +13,6 @@
 <style src="@/assets/css/style.css">
 </style>
 
-<style>
-
-
-</style>
-
 <script>
 // @ is an alias to /src
 import TopNav from '@/components/navigation/TopNav.vue'
@@ -31,5 +26,3 @@ export default {
 }
 
 </script>
-
-

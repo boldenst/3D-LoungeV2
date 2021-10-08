@@ -6,14 +6,10 @@
 
 <script>
 // @ is an alias to /src
-import Buttons from '@/components/Buttons.vue'
 
 export default {
   name: 'Troubleshoot',
   components: {
-    Buttons
   }
 }
 </script>
-
-    
