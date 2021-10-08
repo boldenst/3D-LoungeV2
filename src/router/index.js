@@ -74,6 +74,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  // DON'T DELETE THAT!
+  mode: 'history',
   routes
 })
 

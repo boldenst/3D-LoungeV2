@@ -6,7 +6,7 @@
             Sign in to your account
         </h2>
         </div>
-        <form class="mt-8 space-y-6" @submit.prevent="SignIn">
+        <form class="mt-8 space-y-6" @submit.prevent="loginRequest">
         <input type="hidden" name="remember" value="true">
         <div class="rounded-md shadow-sm -space-y-px">
             <div>
@@ -45,7 +45,7 @@
             Sign in
             </button>
             <div>
-                <p class="mt-2">Need an account? <router-link to="/SignUp" > <span class="font-medium text-main-green-600 hover:text-main-green-500 underline"> Sign up</span></router-link></p>
+                <p class="mt-2">Need an account? <router-link to="/SignUp"> <span class="font-medium text-main-green-600 hover:text-main-green-500 underline"> Sign up</span></router-link></p>
             </div>
         </div>
         </form>
@@ -54,21 +54,38 @@
 </template>
 
 <script>
-import {ref} from 'vue';
-import firebase from "firebase";
-export default {
-    setup() {
-        const email = ref("");
-        const password = ref("");
+import firebase from 'firebase'
 
-        const SignIn = () => {
-           firebase
-                .auth()
-                .signInWithEmailAndPassword(email.value, password.value)
-                .then(data => console.log(data))
-                .catch(err => alert(err.message));
+export default {
+    data() {
+        return {
+            email: "",
+            password: "",
+            xhrRequest: false,
+            errorMessage: "",
+            successMessage: ""
+        }
+    },
+    methods: {
+        loginRequest() {
+            let v = this;
+            v.xhrRequest = true;
+            v.errorMessage = "";
+            v.successMessage = "";
+            firebase.auth().signInWithEmailAndPassword(v.email, v.password).then(
+                (response) => {
+                    console.log(response)
+                    this.$router.push('/troubleshoot')
+                    v.xhrRequest = false;
+                }, 
+                (error) => {
+                    v.errorMessage = error.message;
+                    v.xhrRequest = false;
+                }
+            )
         }
     }
 }
+</script>
 
 
