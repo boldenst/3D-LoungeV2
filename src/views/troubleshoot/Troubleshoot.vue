@@ -56,9 +56,9 @@
               <p class="btn__sugg-edit-txt">Suggest edit</p>
               <img class="btn__sugg-edit-icon" src="@/assets/icons/Edit.svg" alt="">
             </button>
-            <button class="btn__full-guide">
+            <router-link to="/troubleshoot/pillowing" class="btn__full-guide">
               <p class="btn__full-guide-txt">Full Guide</p>
-            </button>
+            </router-link>
           </div>
         </div>
         <div class="issue__image"></div>
@@ -86,9 +86,9 @@
               <p class="btn__sugg-edit-txt">Suggest edit</p>
               <img class="btn__sugg-edit-icon" src="@/assets/icons/Edit.svg" alt="">
             </button>
-            <button class="btn__full-guide">
+            <router-link to="/troubleshoot/bed-adhesion" class="btn__full-guide">
               <p class="btn__full-guide-txt">Full Guide</p>
-            </button>
+            </router-link>
           </div>
         </div>
         <div class="issue__image"></div>
@@ -116,9 +116,9 @@
               <p class="btn__sugg-edit-txt">Suggest edit</p>
               <img class="btn__sugg-edit-icon" src="@/assets/icons/Edit.svg" alt="">
             </button>
-            <button class="btn__full-guide">
+            <router-link to="/troubleshoot/warping" class="btn__full-guide">
               <p class="btn__full-guide-txt">Full Guide</p>
-            </button>
+            </router-link>
           </div>
         </div>
         <div class="issue__image"></div>
@@ -146,9 +146,9 @@
               <p class="btn__sugg-edit-txt">Suggest edit</p>
               <img class="btn__sugg-edit-icon" src="@/assets/icons/Edit.svg" alt="">
             </button>
-            <button class="btn__full-guide">
+            <router-link to="/troubleshoot/extrusionincosistency" class="btn__full-guide">
               <p class="btn__full-guide-txt">Full Guide</p>
-            </button>
+            </router-link>
           </div>
         </div>
         <div class="issue__image"></div>
@@ -176,9 +176,9 @@
               <p class="btn__sugg-edit-txt">Suggest edit</p>
               <img class="btn__sugg-edit-icon" src="@/assets/icons/Edit.svg" alt="">
             </button>
-            <button class="btn__full-guide">
+            <router-link to="/troubleshoot/ringing" class="btn__full-guide">
               <p class="btn__full-guide-txt">Full Guide</p>
-            </button>
+            </router-link>
           </div>
         </div>
         <div class="issue__image"></div>
@@ -206,9 +206,9 @@
               <p class="btn__sugg-edit-txt">Suggest edit</p>
               <img class="btn__sugg-edit-icon" src="@/assets/icons/Edit.svg" alt="">
             </button>
-            <button class="btn__full-guide">
+            <router-link to="/troubleshoot/stringing" class="btn__full-guide">
               <p class="btn__full-guide-txt">Full Guide</p>
-            </button>
+            </router-link>
           </div>
         </div>
         <div class="issue__image"></div>
@@ -236,9 +236,9 @@
               <p class="btn__sugg-edit-txt">Suggest edit</p>
               <img class="btn__sugg-edit-icon" src="@/assets/icons/Edit.svg" alt="">
             </button>
-            <button class="btn__full-guide">
+            <router-link to="/troubleshoot/bridging" class="btn__full-guide">
               <p class="btn__full-guide-txt">Full Guide</p>
-            </button>
+            </router-link>
           </div>
         </div>
         <div class="issue__image"></div>

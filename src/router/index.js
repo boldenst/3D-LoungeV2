@@ -35,14 +35,59 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/troubleshoot/troubleshoot-issues/issue-1.vue')
   },
 
+  // Troubleshooting issues
+
   {
     path: '/troubleshoot/layeradhesion',
     name: 'LayerAdhesion',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/troubleshoot/troubleshoot-issues/LayerAdhesion.vue')
   },
+
+  {
+    path: '/troubleshoot/pillowing',
+    name: 'Pillowing',
+    component: () => import(/* webpackChunkName: "about" */ '../views/troubleshoot/troubleshoot-issues/Pillowing.vue')
+  },
+
+  {
+    path: '/troubleshoot/bed-adhesion',
+    name: 'BedAdhesion',
+    component: () => import(/* webpackChunkName: "about" */ '../views/troubleshoot/troubleshoot-issues/BedAdhesion.vue')
+  },
+  
+  {
+    path: '/troubleshoot/warping',
+    name: 'Warping',
+    component: () => import(/* webpackChunkName: "about" */ '../views/troubleshoot/troubleshoot-issues/Warping.vue')
+  },
+    
+  {
+    path: '/troubleshoot/extrusionincosistency',
+    name: 'ExtrusionInconsistency',
+    component: () => import(/* webpackChunkName: "about" */ '../views/troubleshoot/troubleshoot-issues/ExtrusionInconsistency.vue')
+  },
+  
+  {
+    path: '/troubleshoot/ringing',
+    name: 'Ringing',
+    component: () => import(/* webpackChunkName: "about" */ '../views/troubleshoot/troubleshoot-issues/Ringing.vue')
+  },
+
+  {
+    path: '/troubleshoot/stringing',
+    name: 'Stringing',
+    component: () => import(/* webpackChunkName: "about" */ '../views/troubleshoot/troubleshoot-issues/Stringing.vue')
+  },
+  
+  {
+    path: '/troubleshoot/bridging',
+    name: 'Bridging',
+    component: () => import(/* webpackChunkName: "about" */ '../views/troubleshoot/troubleshoot-issues/Bridging.vue')
+  },
+  
+
+
+  //Troubleshooting Guides
 
   {
     path: '/troubleshoot/changetemphotend',
