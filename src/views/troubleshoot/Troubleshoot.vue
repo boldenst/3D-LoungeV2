@@ -5,7 +5,7 @@
     <Tabs>
       <Tab class="sub-grid issue-1__container grid-area-tab" name="Layer Adhesion" selected="true">
         <div class="issue__info-contains">
-          <h2 class="issue__heading">Stringing Issues</h2>
+          <h2 class="issue__heading">Layer Adhesion Issues</h2>
           <p class="issue__text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum error autem dignissimos nobis illum
             temporibus
@@ -26,12 +26,12 @@
               <p class="btn__sugg-edit-txt">Suggest edit</p>
               <img class="btn__sugg-edit-icon" src="@/assets/icons/Edit.svg" alt="">
             </button>
-            <button class="btn__full-guide">
+            <router-link to="/troubleshoot/layeradhesion" class="btn__full-guide">
               <p class="btn__full-guide-txt">Full Guide</p>
-            </button>
+            </router-link>
           </div>
         </div>
-        <div class="issue__image"></div>
+        <div class="issue__image issue__image-1"></div>
       </Tab>
       <Tab class="sub-grid" name="Pillowing">
         <div class="issue__info-contains">
