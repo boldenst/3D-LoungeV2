@@ -1,9 +1,11 @@
+
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -41,7 +43,7 @@
 
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;                                                                                                                                                                                        
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -276,4 +278,206 @@
   grid-area: img;
   width: 100%;
   background-color: red;
+}
+=======
+
+/* ISSUE INTRO */
+
+.issue-intro {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.issue-heading {
+  width: 100%;
+  text-align: left;
+  background-color: var(--color-brand);
+  padding: 1rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 7px 7px 0 0;
+}
+
+.issue-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.issue-content__desc {
+  width: 100%;
+  height: 25rem;
+  margin-right: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.issue-content__gallery {
+  display: grid;
+  width: 100%;
+  height: 25rem;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'main main second'
+  'main main third';
+}
+
+.issue-content-gallery__image-main {
+  grid-area: main;
+}
+
+.issue-content-gallery__image-second {
+  grid-area: second;
+}
+
+.issue-content-gallery__image-third {
+  grid-area: third;
+}
+
+.issue-content-desc__tags {
+  text-align: left;
+  display: flex;
+}
+
+.issue-content-desc-tags__tag {
+  font-family: montserrat;
+  margin: 1.5rem 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.main-tag {
+  color: var(--color-brand);
+}
+
+.issue-content-desc_text {
+  text-align: left;
+}
+
+.icons-seperator {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+justify-content: space-between;
+}
+
+.issue-content-desc__icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.issue-content-desc-icons__icon {
+  margin: 0 0.5rem;
+  width: 2rem;
+}
+
+.issue-content-desc-icons__icon img {
+  width: 100%;
+}
+
+/* CAUSES AND SOLUTIONS */
+
+.cause-solutions {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.causes-container, .solutions-container {
+  width: 49.5%;
+}
+
+.causes-container__heading-flex, .solutions-container__heading-flex {
+  display: flex;
+  background-color: var(--color-light-black);
+  color: var(--color-white);
+  border-radius: 7px 7px 0 0;
+  padding: 0.2rem;
+  width: 100%;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.causes {
+  display: flex;
+  text-align: left;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 1.1rem 0;
+  font-weight: 600;
+  border-bottom: 3px solid var(--color-red);
+  align-items: center;
+}
+
+.solutions {
+  display: flex;
+  text-align: left;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 1.1rem 0;
+  font-weight: 600;
+  border-bottom: 3px solid var(--color-green);
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* EXPLANATIONS STYLING */
+
+.explanations-wrapper {
+  background-color: white;
+  margin: 5rem 0 1.5rem 0;
+  border-radius: 0.5rem;
+}
+
+.explanations__problem-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.explanations__caption-layout {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  background-color: var(--color-brand);
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 7px 7px 0 0;
+  
+}
+
+.explanations__caption-layout-heading {
+  font-size: 1.4rem;
+  color: var(--color-white);
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.explanation-text {
+  font-size: 1rem;
+  margin: 2rem 0 1rem 1.5rem;
+  text-align: left;
+}
+
+.explanations__question-icon {
+  background-color: var(--color-brand);
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 2.4rem;
+  height: 2rem;
 }

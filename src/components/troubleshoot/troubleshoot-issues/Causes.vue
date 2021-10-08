@@ -1,19 +1,24 @@
 <template>
-    <section>
-        <div class="p-4">
-            <h2 class="font-semibold mt-2 mb-2 lg:text-left">Possible causes</h2>
+    <section class="cause-solutions">
+        <div class="causes-container">
+            <div class="causes-container__heading-flex">
+                <img src="@/assets/icons/warning-black.svg" alt="">
+                <h2 class="causes-heading">Possible causes</h2>
+            </div>
+            
             <slot name="causes">
-                <p class="causes font-semibold text-left">- Temperature too low on hot end</p>
-                <p class="causes font-semibold text-left">- Wrong profile on slicer</p>
+                <p class="causes">Cause 1</p>
+                <p class="causes">Cause 2</p>
             </slot>
         </div>
-        <div class="p-4">
-            <h2 class="font-semibold mb-2 lg:text-left">Possible solutions</h2>
+        <div class="solutions-container">
+            <div class="solutions-container__heading-flex">
+                <img src="@/assets/icons/fix-black.svg" alt="">
+                <h2 class="solutions-heading">Possible solutions</h2>
+            </div>            
             <slot name="solutions">
-                <p class="solution font-semibold text-left">- Temperature too low on hot end <a
-                        class="underline cursor-pointer" href="">Learn how...</a></p>
-                <p class="solution font-semibold text-left">- Wrong profile on slicer <a
-                        class="underline cursor-pointer" href="">Learn how...</a></p>
+                <p class="solutions">Solution 1 <router-link to="/SignIn">Learn how...</router-link></p>
+                <p class="solutions">Solution 2 <router-link to="/SignIn">Learn how...</router-link></p>
             </slot>
         </div>
 
@@ -21,29 +26,5 @@
 </template>
 
 <style scoped>
-    h2 {
-        margin-bottom: 0.2em;
-    }
 
-    .solution {
-        text-align: left;
-        color: #0B7400;
-    }
-
-    .causes {
-        color: #A70707;
-    }
-
-    a {
-        color: grey;
-    }
-
-    @media screen and (min-width: 600px) {
-        section {
-            display: flex;
-            margin: auto;
-            justify-content: center;
-            align-items: center;
-        }
-    }
 </style>
