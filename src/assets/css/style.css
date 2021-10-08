@@ -71,7 +71,7 @@
   "head head head head head head head head head head"
   "nav nav info info info info info info info info"
   ;
-  margin: 0 14vw;
+  margin: 0 14vw 5rem 14vw;
 }
 
 .tabs-section__heading {
@@ -85,13 +85,10 @@
   padding: 0 0 0 1rem;
 }
 
-.tabs-section__img {
-  margin-right: .5rem;
-}
-
 .tabs-section__heading {
   font-size: 1.5rem;
   color: var(--color-white);
+  font-weight: bold;
 }
 
 .tabs-ul {
@@ -101,7 +98,7 @@
 .grid-area-info {
   grid-area: info;
   width: 100%;
-  background-color: rgb(238, 238, 238);
+  background-color: var(--color-light);
 }
 
 .tabs-li {
@@ -112,6 +109,7 @@
   width: 100%;
   background-color: var(--color-light-black);
   position: relative;
+  cursor: pointer;
 }
 
 .btn-tab__grayline {
@@ -282,10 +280,6 @@
   background-image: url(../Nozzles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.issue__image-1 {
-
 }
 
 /* ISSUE INTRO */
