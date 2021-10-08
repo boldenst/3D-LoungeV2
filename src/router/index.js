@@ -74,7 +74,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  // DON'T DELETE THAT!
+  // DON'T DELETE THAT! Gets rid off hashtag in URL
   mode: 'history',
   routes
 })
