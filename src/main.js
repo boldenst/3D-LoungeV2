@@ -8,6 +8,9 @@ let Bootstrap = require('bootstrap')
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/tailwind.css'
 import firebase from 'firebase'
+import CommentGrid from 'vue-comment-grid'
+
+Vue.use(CommentGrid)
 
 Vue.config.productionTip = false
 
