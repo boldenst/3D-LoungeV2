@@ -54,10 +54,16 @@ export default {
     methods: {
         createNewAccount() {
             firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
-            .then((userCredential) => {
-                // Signed in 
-                var user = userCredential.user;
-                // ...
+            .then((userCredential) => {                
+                localStorage.setItem("commentUserId", userCredential.user.uid)
+                localStorage.setItem("commentToken", userCredential.user.Aa)
+                localStorage.setItem("commentExpirationDate", userCredential.user.expiresIn)
+                localStorage.setItem("commentUserName", "")
+                localStorage.setItem("commentAdmin", undefined)
+                localStorage.setItem("commentEmail", userCredential.user.email)
+
+                this.$router.push('/troubleshoot')
+                v.xhrRequest = false;
             })
             .catch((error) => {
                 var errorCode = error.code;
