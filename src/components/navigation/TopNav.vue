@@ -34,6 +34,7 @@
                 </div>
             </nav>
         </div>
+        <!-- DESKTOP MENU -->
         <div class="header-desk-wrapper">
             <a href="">
                 <img class="header-desk__logo" src="@/assets/icons/logo-light.svg" href="logo">
@@ -43,20 +44,61 @@
                     <li><router-link to="/troubleshoot">Troubleshoot</router-link></li>
                     <li><router-link to="/forum" href="">Forum</router-link></li>
                     <div class="header-desk-nav__horisontal-breaker"></div>
-                    <li><router-link to="/SignIn">Sign in</router-link></li>
+                    <li v-if="!auth"><router-link to="/SignIn">Sign in</router-link></li>
+                    <li v-else class="text-white">{{ email }} | <button @click="signOut">Log out</button></li>
                 </ul>
             </nav>
-
         </div>
         <div class="breadcrumb">
             <a href=""></a>
             <p></p>
         </div>
-
     </div>
-
-
 </template>
+
+<script>
+    import firebase from 'firebase';
+
+    export default ({
+        data() {
+            return {
+                auth: false,
+                email: ""
+            }
+        },
+        created() {
+            if (localStorage.getItem("commentToken") && localStorage.getItem("commentEmail") && localStorage.getItem("commentUserId")) {
+                    this.auth = true;
+                    this.email = localStorage.getItem("commentEmail");
+                }
+        },
+        methods: {
+            signOut() {
+                firebase.auth().signOut().then(() => {
+                    localStorage.removeItem('commentUserId')
+                    localStorage.removeItem('commentToken')
+                    localStorage.removeItem('commentExpirationDate')
+                    localStorage.removeItem('commentUserName')
+                    localStorage.removeItem('commentAdmin')
+                    localStorage.removeItem('commentEmail')
+
+                    this.$router.push('/troubleshoot')
+                }).catch((error) => {
+                    console.log(error)
+                });
+            }
+        },
+        mounted() {
+            $("#burger-button").click(function () {
+                $("#burger-menu").toggleClass("burger-menu--show");
+            });
+
+            $("#burger-close").click(function () {
+                $("#burger-menu").toggleClass("burger-menu--show");
+            });
+        }
+    })
+</script>
 
 <style scoped>
     @media only screen and (max-width: 600px) {
@@ -276,17 +318,3 @@
 
     }
 </style>
-
-<script>
-    export default ({
-        mounted() {
-            $("#burger-button").click(function () {
-                $("#burger-menu").toggleClass("burger-menu--show");
-            });
-
-            $("#burger-close").click(function () {
-                $("#burger-menu").toggleClass("burger-menu--show");
-            });
-        }
-    })
-</script>
