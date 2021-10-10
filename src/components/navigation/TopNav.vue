@@ -43,7 +43,7 @@
                     <li><router-link to="/troubleshoot">Troubleshoot</router-link></li>
                     <li><router-link to="/forum" href="">Forum</router-link></li>
                     <div class="header-desk-nav__horisontal-breaker"></div>
-                    <li><router-link to="/SignIn">Sign in</router-link></li>
+                    <li><router-link to="/signIn">Sign in</router-link></li>
                 </ul>
             </nav>
 
