@@ -19,7 +19,12 @@
             </div>            
             <slot name="solutions">
                 <p class="solutions">Solution 1 <router-link to="/SignIn">Learn how...</router-link></p>
-                <p class="solutions">Solution 2 <router-link to="/SignIn">Learn how...</router-link></p>
+                <p class="solutions">Solution 2 
+                    <a class="btn__learn-how" href="">
+                        <p class="btn__learn-how-txt">Learn how</p>
+                        <img class="btn__learn-how-icon" src="@/assets/icons/forward-arrow-green.svg" alt="">
+                    </a>
+                </p>
             </slot>
         </div>
         

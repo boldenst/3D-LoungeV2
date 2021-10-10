@@ -13,10 +13,8 @@
       </template>
       <template v-slot:issue-introdesc>
         <p class="issue-content-desc_text">
-          Layer adhesion issues can cause a lot of issues with strength etc. ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commo labore et dolore magna aliqua.
+          Layer adhesion issues can have many causes and can ruin a perfectly fine print. And there are way sto
+            prevent this from happening to your print, to increase both the strength and the qulity of your prints.
         </p>
       </template>
       <template v-slot:issue-gallery>
