@@ -13,10 +13,8 @@
       </template>
       <template v-slot:issue-introdesc>
         <p class="issue-content-desc_text">
-          Layer adhesion issues can cause a lot of issues with strength etc. ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commo labore et dolore magna aliqua.
+          Layer adhesion issues can have many causes and can ruin a perfectly fine print. And there are way sto
+            prevent this from happening to your print, to increase both the strength and the qulity of your prints.
         </p>
       </template>
       <template v-slot:issue-gallery>
@@ -69,8 +67,33 @@
       perferendis dicta corporis optio facilis at laudantium? Asperiores fugit blanditiis doloremque suscipit,
       hic qui libero, et provident veniam dicta dolor.
     </Explanations>
-    <Comments></Comments>
-  </div>
+
+    <div class="comment-container-related">
+    <Comments class="comments-forum"></Comments>
+    <div class="relatedposts">
+      <h3 class="relatedposts-heading">Related articles:</h3>
+      <div class="relatedposts-article">
+        <p>How to set up your printer</p>
+        <img src="@/assets/icons/forward-arrow.svg" alt="">
+      </div>
+            <div class="relatedposts-article">
+        <p>Get rid of warping</p>
+        <img src="@/assets/icons/forward-arrow.svg" alt="">
+      </div>
+            <div class="relatedposts-article">
+        <p>How to level your bed</p>
+        <img src="@/assets/icons/forward-arrow.svg" alt="">
+      </div>
+            <div class="relatedposts-article">
+        <p>Prevent spaghetti</p>
+        <img src="@/assets/icons/forward-arrow.svg" alt="">
+      </div>
+            <div class="relatedposts-article">
+        <p>Reduce stringing</p>
+        <img src="@/assets/icons/forward-arrow.svg" alt="">
+      </div>
+    </div>
+    </div>  </div>
 </template>
 
 

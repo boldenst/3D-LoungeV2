@@ -6,12 +6,10 @@
         <div class="issue__info-contains">
           <h2 class="issue__heading">Layer Adhesion Issues</h2>
           <p class="issue__text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum error autem dignissimos nobis illum
-            temporibus
-            voluptate laboriosam eius consequatur! Labore laborum ducimus, culpa sit neque molestias dignissimos natus
-            minima sed recusandae ipsa necessitatibus obcaecati vel eligendi voluptatem, provident in non ad saepe
-            veniam
-            eveniet cumque, fugit unde eaque! Doloribus.
+            Layer adhesion issues can have many causes and can ruin a perfectly fine print. And there are way sto
+            prevent this from happening to your print, to increase both the strength and the qulity of your prints.
+            <br> <br>
+            See the full guide to find out how to prevent it, and why it might be happening in the first place.
           </p>
         </div>
         <div class="issue-btn__container">
@@ -62,7 +60,7 @@
         </div>
         <div class="issue__image"></div>
       </Tab>
-            <Tab class="sub-grid" name="Bed Adhesion">
+      <Tab class="sub-grid" name="Bed Adhesion">
         <div class="issue__info-contains">
           <h2 class="issue__heading">Bed Adhesion Issues</h2>
           <p class="issue__text">
@@ -92,7 +90,7 @@
         </div>
         <div class="issue__image"></div>
       </Tab>
-            <Tab class="sub-grid" name="Warping">
+      <Tab class="sub-grid" name="Warping">
         <div class="issue__info-contains">
           <h2 class="issue__heading">Warping Issues</h2>
           <p class="issue__text">
@@ -122,7 +120,7 @@
         </div>
         <div class="issue__image"></div>
       </Tab>
-            <Tab class="sub-grid" name="Extrusion Inconsistency">
+      <Tab class="sub-grid" name="Extrusion Inconsistency">
         <div class="issue__info-contains">
           <h2 class="issue__heading">Extrusion Inconsistency Issues</h2>
           <p class="issue__text">
@@ -152,7 +150,7 @@
         </div>
         <div class="issue__image"></div>
       </Tab>
-            <Tab class="sub-grid" name="Ringing">
+      <Tab class="sub-grid" name="Ringing">
         <div class="issue__info-contains">
           <h2 class="issue__heading">Ringing Issues</h2>
           <p class="issue__text">
@@ -182,7 +180,7 @@
         </div>
         <div class="issue__image"></div>
       </Tab>
-            <Tab class="sub-grid" name="Stringing">
+      <Tab class="sub-grid" name="Stringing">
         <div class="issue__info-contains">
           <h2 class="issue__heading">Stringing Issues</h2>
           <p class="issue__text">
@@ -212,7 +210,7 @@
         </div>
         <div class="issue__image"></div>
       </Tab>
-            <Tab class="sub-grid" name="Bridging">
+      <Tab class="sub-grid" name="Bridging">
         <div class="issue__info-contains">
           <h2 class="issue__heading">Bridging Issues</h2>
           <p class="issue__text">
@@ -242,7 +240,7 @@
         </div>
         <div class="issue__image"></div>
       </Tab>
-            <Tab class="sub-grid" name="More">
+      <Tab class="sub-grid" name="More">
         <div class="issue__info-contains">
           <h2 class="issue__heading">More Issues</h2>
           <p class="issue__text">
@@ -283,6 +281,8 @@
   import FilterSearch from '@/components/troubleshoot/troubleshoot-home/FilterSearch.vue'
   import Tab from '@/components/troubleshoot/troubleshoot-home/Tab.vue'
   import Tabs from '@/components/troubleshoot/troubleshoot-home/Tabs.vue'
+  import Footer from '@/components/navigation/Footer.vue'
+
 
 
   export default {
@@ -291,7 +291,8 @@
       Description,
       FilterSearch,
       Tab,
-      Tabs
+      Tabs,
+      Footer
     }
   }
 </script>

@@ -8,20 +8,26 @@
     <router-view></router-view>
 
       <TopNav></TopNav>
+      <Footer> </Footer>
+
+      
   </div>
 </template>
-<style src="@/assets/css/style.css">
+<style defer src="@/assets/css/style.css">
 </style>
 
 <script>
 // @ is an alias to /src
 import TopNav from '@/components/navigation/TopNav.vue'
+import Footer from '@/components/navigation/Footer.vue'
+
 
 
 export default {
   name: 'App',
   components: {
-    TopNav
+    TopNav,
+    Footer
   }
 }
 

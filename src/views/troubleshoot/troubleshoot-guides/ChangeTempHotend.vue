@@ -54,8 +54,33 @@
       know what temperature is needed in advance. But if the file has already been sliced, and you need to tune the
       temperature while the print is running, you can change it on your printer.
     </Explanations>
-    <Comments></Comments>
-  </div>
+
+    <div class="comment-container-related">
+    <Comments class="comments-forum"></Comments>
+    <div class="relatedposts">
+      <h3 class="relatedposts-heading">Related articles:</h3>
+      <div class="relatedposts-article">
+        <p>How to set up your printer</p>
+        <img src="@/assets/icons/forward-arrow.svg" alt="">
+      </div>
+            <div class="relatedposts-article">
+        <p>Get rid of warping</p>
+        <img src="@/assets/icons/forward-arrow.svg" alt="">
+      </div>
+            <div class="relatedposts-article">
+        <p>How to level your bed</p>
+        <img src="@/assets/icons/forward-arrow.svg" alt="">
+      </div>
+            <div class="relatedposts-article">
+        <p>Prevent spaghetti</p>
+        <img src="@/assets/icons/forward-arrow.svg" alt="">
+      </div>
+            <div class="relatedposts-article">
+        <p>Reduce stringing</p>
+        <img src="@/assets/icons/forward-arrow.svg" alt="">
+      </div>
+    </div>
+    </div>  </div>
 </template>
 
 

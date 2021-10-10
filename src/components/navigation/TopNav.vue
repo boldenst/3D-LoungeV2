@@ -49,8 +49,8 @@
 
         </div>
         <div class="breadcrumb">
-            <a href="">Troubleshooting ></a>
-            <p>Layer adhesion issues</p>
+            <a href=""></a>
+            <p></p>
         </div>
 
     </div>
@@ -267,7 +267,7 @@
             top: 5rem;
             background-color: var(--color-brand);
             height: 2rem;
-            padding-left: 13vw;
+            padding-left: 14vw;
             padding-top: 0.3rem;
             width: 100%;
             color: var(--color-white);

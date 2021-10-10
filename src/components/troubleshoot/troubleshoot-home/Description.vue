@@ -1,10 +1,7 @@
 <template>
     <section>
     <h1 class="text-3xl text-gray-900 mb-3 text-left"> Welcome to 3D-Lounge</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut, 
-        assumenda corporis exercitationem suscipit aperiam animi ex sequi 
-        ipsam delectus? Suscipit sint repellendus laborum error ut provident 
-        et quibusdam blanditiis?</p>
+    <p>3D Lounge is created with the 3D Printing enthusiasts in mind. Find solutions to your issues, share what has worked for you, and take part in the conversation. Information and knowledge should be shared, so we can learn from each other's mistakes and experiences.</p>
     </section>
 </template>
 
