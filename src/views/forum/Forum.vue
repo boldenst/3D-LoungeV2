@@ -92,5 +92,6 @@
       Tab,
       Tabs
     }
+
   }
 </script>
