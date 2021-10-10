@@ -41,6 +41,10 @@
   src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 }
 
+body {
+  overflow-x: hidden;
+}
+
 
 #app {
   font-family: 'Montserrat', sans-serif;
@@ -431,11 +435,33 @@ justify-content: space-between;
   align-items: center;
 }
 
+.cause {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
+.causes-forum-link {
+  width: auto;
+  display: block;
+  text-align: left;
+  justify-self: flex-start;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.causes-forum-link:hover {
+  color: var(--color-brand);
+}
+
 /* EXPLANATIONS STYLING */
 
 .explanations-wrapper {
   background-color: white;
-  margin: 5rem 0 1.5rem 0;
+  margin: 4rem 0 2rem 0;
   border-radius: 0.5rem;
 }
 
@@ -484,4 +510,95 @@ justify-content: space-between;
   font-size: 1.5rem;
   width: 2.4rem;
   height: 2rem;
+}
+
+/* COMMENTS EXTRA STYLING */
+
+.comments[data-v-5e74abe9] .commentBox>button, .comments[data-v-5e74abe9] .commentBox .remainingLetter {
+  background-color: var(--color-brand);
+}
+
+.comments[data-v-5e74abe9] .commentBox>button, .comments[data-v-5e74abe9] .commentBox .remainingLetter {
+  background-color: var(--color-brand);
+}
+
+.comments[data-v-5e74abe9] .commentBox>button:hover {
+  background-color: var(--color-black);
+}
+
+.userName {
+  text-align: left;
+}
+
+.logOut {
+  background-color: var(--color-dark-gray);
+  color: var(--color-white);
+  border-radius: 7px;
+  padding: 1em;
+}
+
+.remainingLetter {
+  background-color: #25686D;
+  display: none;
+  position: absolute;
+  right: -10vw;
+  background: #25686D;
+}
+
+
+.comment-container-related {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.comments-forum {
+  width: 50%;
+}
+
+.relatedposts {
+  width: 40%;
+  border-radius: 7px;
+}
+
+.relatedposts-heading {
+  font-weight: 600;
+  background-color: var(--color-brand);
+  color: var(--color-white);
+  padding: 1rem;
+  border-radius: 7px 7px 0 0;
+  text-align: left;
+}
+
+.relatedposts-article {
+  background-color: var(--color-dark-gray);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-white);
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+.relatedposts-article img {
+  width: 2.5rem;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 5rem 14vw;
+  background-color: var(--color-foot);
+  color: var(--color-white);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.footer-link:hover {
+  color: var(--color-black);
 }

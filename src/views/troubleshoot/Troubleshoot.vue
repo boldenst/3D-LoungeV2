@@ -283,6 +283,8 @@
   import FilterSearch from '@/components/troubleshoot/troubleshoot-home/FilterSearch.vue'
   import Tab from '@/components/troubleshoot/troubleshoot-home/Tab.vue'
   import Tabs from '@/components/troubleshoot/troubleshoot-home/Tabs.vue'
+  import Footer from '@/components/navigation/Footer.vue'
+
 
 
   export default {
@@ -291,7 +293,8 @@
       Description,
       FilterSearch,
       Tab,
-      Tabs
+      Tabs,
+      Footer
     }
   }
 </script>

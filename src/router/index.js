@@ -98,6 +98,17 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/troubleshoot/troubleshoot-guides/ChangeTempHotend.vue')
   },
 
+
+  //Forum posts
+  {
+    path: '/forum/forumpost1',
+    name: 'ForumPost1',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/forum/ForumPost1')
+  },
+
   {
     path: '/troubleshoot',
     name: 'Troubleshoot',

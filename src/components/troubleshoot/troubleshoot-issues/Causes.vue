@@ -1,4 +1,5 @@
 <template>
+    <div class="cause">
     <section class="cause-solutions">
         <div class="causes-container">
             <div class="causes-container__heading-flex">
@@ -21,8 +22,11 @@
                 <p class="solutions">Solution 2 <router-link to="/SignIn">Learn how...</router-link></p>
             </slot>
         </div>
+        
 
     </section>
+    <router-link class="causes-forum-link" to="/forum">Didn't find your answer? - Check the Forum</router-link>
+    </div>
 </template>
 
 <style scoped>
